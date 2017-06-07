@@ -1,2 +1,2 @@
-from crosssection import CrossSection
-from sectioncalculation import SectionCalculation
+from .crosssection import CrossSection
+from .sectioncalculation import SectionCalculation
