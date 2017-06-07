@@ -1,2 +1,2 @@
-from PIL import Image as ImgLoad
-from topograpy import *
+from crosssection import CrossSection
+from sectioncalculation import SectionCalculation
