@@ -1,8 +1,6 @@
 """This module is used for the calculation and generation of
 coordinates used to create a cross section of a topography image"""
 
-from PIL import Image as ImgLoad
-
 class CrossSection:
     """Main class for the return of coordinates"""
     def __init__(self):
