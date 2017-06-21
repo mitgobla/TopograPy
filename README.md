@@ -1,5 +1,6 @@
 # TopograPy
 A Height Map Coordinate Generator in Python.
+Windows Only.
 
 ## Installing Requirements
 Pillow is the only requirement for this module and it is used for reading images. To install, use: 
@@ -11,4 +12,7 @@ ToporaPy is not available on PyPI yet, but you can still install the master bran
 ```
 pip install -e git+https://github.com/mitgobla/TopograPy.git@master#egg=topograpy
 ```
-
+Alternatively, you can get future versions that have not been release to the `master` branch by using the following:
+```
+pip install -e git+https://github.com/mitgobla/TopograPy.git@future#egg=topograpy
+```
