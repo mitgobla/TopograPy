@@ -25,10 +25,9 @@ class CrossSection:
             response.append(self.image_size)
         return response
 
-    def calculate(self, path):
+    def calculate(self, image_path, graph):
         """Calculate the cross section"""
-        graph = SectionCalculation()
-        graph.open_image(path)
+        graph.open_image(image_path)
         graph.graph_heights()
         coordinates = graph.calculate_coordinates()
         self.image_size = graph.get_image()
