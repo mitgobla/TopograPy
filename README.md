@@ -1,7 +1,7 @@
 # TopograPy
 A Height Map Coordinate Generator in Python.
 Windows Only.
-
+Please note: this program is being completely re-programmed to add more coordinate generation options to suit generation of height maps in different forms. As of the current version, it only supports being generated onto a 2D canvas that can't be rotated; I am planning on changing this in the future.
 ## Installing Requirements
 Pillow is the only requirement for this module and it is used for reading images. To install, use: 
 ```
