@@ -1,3 +1,4 @@
+[![HitCount](http://hits.dwyl.io/mitgobla/TopograPy.svg)](http://hits.dwyl.io/mitgobla/TopograPy)
 # TopograPy
 A Height Map Coordinate Generator in Python.
 Windows Only.
