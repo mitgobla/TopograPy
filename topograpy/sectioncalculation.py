@@ -33,7 +33,7 @@ class SectionCalculation:
                 self.highest = pin_high[0]
         for rows in range(len(self.topography_darkness)):
             for pins in range(len(self.topography_darkness[rows])):
-                print(self.topography_darkness[rows][pins])
+                self.topography_darkness[rows][pins] = print(self.topography_darkness[rows][pins][0]
                 self.topography_darkness[rows][pins] = int(
                     (self.topography_darkness[rows][pins]/self.highest)*100)
 
