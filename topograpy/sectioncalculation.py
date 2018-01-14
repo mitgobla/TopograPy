@@ -34,7 +34,7 @@ class SectionCalculation:
                     self.highest = pin_high[0]
             except TypeError:
                 if pin_high > self.highest:
-                    self.highest = pin_high[0]
+                    self.highest = pin_high
         for rows in range(len(self.topography_darkness)):
             for pins in range(len(self.topography_darkness[rows])):
                 try:
