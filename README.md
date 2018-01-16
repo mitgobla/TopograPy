@@ -17,6 +17,7 @@ Alternatively, you can get future versions that have not been release to the `ma
 ```
 pip install -e git+https://github.com/mitgobla/TopograPy.git@future#egg=topograpy
 ```
+
 ## Example Usage
 ```python
 import topograpy
