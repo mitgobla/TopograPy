@@ -29,11 +29,18 @@ class SectionCalculation:
         """Calculates the highest point and lowest"""
         for rows in range(len(self.topography_darkness)):
             pin_high = max(self.topography_darkness[rows])
-            if pin_high > self.highest:
-                self.highest = pin_high
-
+            try:
+                if pin_high[0] > self.highest:
+                    self.highest = pin_high[0]
+            except TypeError:
+                if pin_high > self.highest:
+                    self.highest = pin_high
         for rows in range(len(self.topography_darkness)):
             for pins in range(len(self.topography_darkness[rows])):
+                try:
+                    self.topography_darkness[rows][pins] = self.topography_darkness[rows][pins][0]
+                except TypeError:
+                    pass
                 self.topography_darkness[rows][pins] = int(
                     (self.topography_darkness[rows][pins]/self.highest)*100)
 
