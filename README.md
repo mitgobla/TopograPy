@@ -26,16 +26,8 @@ graph = topograpy.SectionCalculation()
 
 topograph = cross_section.calculate("height_map.png", graph)
 coordinates = cross_section.return_coordinates()
-x_coordinates = coordinates[0] # An array of x1 and x2 of every pixel
-y_coordinates = coordinates[1] # An array of y1 and y2 of every pixel
 image_size = coordinates[2] # Tuple of image x and y size
 heights = graph.return_darkness() # The height of each line based on height % of image
-```
-
-To get the number of pixels of the image
-```python
->>> len(x_coordinates) # or len(y_coordinates)
-1168561 # number of pixels of the image
 ```
 
 To get the darkness (height factor) for a specific pixel:
@@ -44,4 +36,20 @@ To get the darkness (height factor) for a specific pixel:
 >>> heights[0][0]
 25
 # The higher the number, the 'taller' the pixel on the height map
+```
+
+Generator for creating two sets of coordinates to generate a line.
+```python
+generated_coordinates = [[], []]
+for x_coord in range(image_size[0]):
+    for y_coord in range(image_size[1]):
+        generated_coordinates[0].append((x_coord, heights[x_coord][y_coord], y_coord)
+        generated_coordinates[1].append((x_coord, 0, y_coord))
+```
+This will generate a list with two lists `xyz1` and `xyz2` 
+```python
+>>> generated_coordinates[0][0]
+(0, 25, 0)
+>>> generated_coordinates[1][0]
+(0, 0, 0)
 ```
