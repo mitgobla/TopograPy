@@ -19,6 +19,9 @@ pip install -e git+https://github.com/mitgobla/TopograPy.git@future#egg=topograp
 ```
 
 ## Example Usage
+Here's a video of a render of a Grand Canyon height map, that used this module in line with PyOpenGL and PyGame. 
+<a href="https://www.youtube.com/watch?v=_1nt6SkSSqg"><img src="https://img.youtube.com/vi/_1nt6SkSSqg/0.jpg" alt="Click to watch on YouTube" width=200 height=150 title="Click here to watch on YouTube" /></a>
+## Example Code
 ```python
 import topograpy
 
