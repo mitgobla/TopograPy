@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='topograpy',
-      version='0.1',
+      version='1.1',
       description='Coordinate Generator for Height Maps',
       url='http://github.com/mitgobla/TopograPy',
       author='Ben Dodd',
