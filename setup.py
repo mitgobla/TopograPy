@@ -1,3 +1,7 @@
+"""
+TopograPy Setup
+"""
+
 from setuptools import setup
 
 setup(name='topograpy',
